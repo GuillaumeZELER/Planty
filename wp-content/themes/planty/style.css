@@ -1,0 +1,431 @@
+/*
+Theme Name: Planty
+Description: Theme enfant de Guillaume ZELER  projet 6
+Author: G ZELER
+Author URI: https://www.wpserveur.net
+Template: blankslate
+Version: 0.1.0
+*/
+
+/* .rectangle-commander{
+	height : 100%;
+	width : 120px;
+	color : #DC9F96;
+	z-index: 3;
+
+} */
+
+
+/* ------------header------------ */
+
+header{
+	display : flex;	
+	justify-content:space-between;
+}
+
+header nav {
+	background-color : white;
+	color: #000000;
+	font-family : syne;
+	font-weight : 400;
+	font-size : 16px;
+	justify-content:  space-between !important;
+	display : flex;
+	align-items : center;
+}
+
+#menu-principal{
+	display: flex;
+}
+
+header nav a:hover {
+	font-weight : 700;
+	font-size : 13px;
+
+}
+
+#site-title{
+	cursor: pointer;
+}
+
+#search, .entry-title, .page-item-33{
+	display : none !important;
+}
+
+nav a {
+	text-decoration: none;
+	color: #000000;
+	padding : 0px 30px 0px 30px;
+}
+
+header .rectangle-commander{
+	background-color: #DC9F96;
+	width : 170px;
+	height : 70px;
+	z-index : 0;
+	display : flex;
+	align-items : center;
+}
+
+.rectangle-commander:hover{
+	background-color: #C02E44;
+}
+
+.logo-widget {
+	padding : 25px;
+}
+
+.test img {
+	height : 100%;
+	background-color : white;
+	padding : 20px;
+}
+
+.commander {
+	color : white;
+	z-index: 4;
+}
+
+
+/* Bouton commander accueil */
+/* .elementor-element-719de2d{
+	display : flex;
+	justify-content : center;	
+} */
+ /* --- */
+
+/* ------------selecteur quantité------------ */
+
+.selecteur-quantite{
+	display : flex;
+}
+
+#nombre {
+	border : none;
+	border-radius : 10px 0px 0px 10px !important;
+	text-align : center;
+	max-width : 50px;
+}
+
+.plus-moins{
+	display : flex;
+	flex-direction: column;
+	color : white
+}
+
+.plus{
+	height : 50%;
+	width : 30px;
+	background-color : #DC9F96;
+	border-radius : 0px 10px 0px 0px;
+	text-align : center;
+	display : flex;
+	align-items : center;
+}
+
+.plus p {
+	border-radius : 0px 10px 0px 0px !important;
+}
+
+.moins{
+	height : 50%;
+	width : 30px;
+	background-color : #DC9F96;
+	border-radius : 0px 0px 10px 0px;
+	text-align : center;
+	justify-content : center !important;
+	display : flex;
+	align-items : center;
+}
+
+.plus-moins p{
+	height : 50%;
+	width : 30px;
+	background-color : #DC9F96;
+	border-radius : 0px 0px 10px 0px;
+	justify-content : center !important;
+	display : flex;
+	text-align : center;
+	align-items : center;
+}
+
+.selecteur-quantite{
+	margin-left : -10px;
+	display : flex;
+	justify-content : center;
+}
+	
+.plus {
+		border-bottom :solid 1px white;
+}
+
+
+/* ------------formulaire------------ */
+
+.nf-form-cont h3{
+	color : white;
+	font-family : syne;
+	font-weight : 700;
+	font-size : 30px;
+}
+
+.nf-form-cont label {
+	color : white;
+	font-family : syne;
+	font-weight : 400 !important;
+	font-size : 20px;
+}
+
+.nf-field-element input {
+	border-radius : 10px !important;
+	height : 80px !important; 
+	text-align : center;
+} 
+
+
+/* ------------formulaire NOUS CONTACTER------------ */
+#nf-field-7{
+	border-radius : 10px
+}
+
+.elementor-element-93b0019 input, .elementor-button {
+	height : 50px !important; 
+	border-radius : 10px !important;
+}
+
+.elementor-button-text {
+	font-family : syne;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 27px;
+	text-align : center !important;
+	align-items: center !important;
+}
+
+h3 {
+	margin-bottom : 50px;
+	margin-top : 40px;
+}
+
+.elementor-element-7966edb {
+	padding-left : 20px;
+}
+
+#copyright {
+	display : block;
+	text-align : center;
+	text-decoration : none;
+	padding : 20px
+}
+#copyright a{
+	text-decoration : none;
+	color : black;
+	font-family : syne;
+	font-weight : 400;
+	font-size : 16px;
+}
+
+.post-edit-link {
+	display : none;
+}
+
+.elementor-button-link {
+	margin-left : 10px;
+}
+
+/* ------------Media queries------------ */
+
+@media screen and (max-width: 1067px ){
+	.elementor-button-link {
+		min-width : 30%;
+	}
+
+	.elementor-section-boxed{
+		padding-left : 20px !important;
+	}
+	
+	.selecteur-quantite {
+		display : flex;
+		justify-content : center;
+	}
+
+	h2 {
+		padding-left : 10px;
+		font-size : 24px!important;
+		margin-top : 30px !important;
+		margin-bottom : 10px !important;
+	}
+
+	.elementor-element-populated{
+		margin : -10px;
+		display : flex;
+		justify-content : center;
+	}
+
+	.elementor-spacer-inner{
+		margin : -10px;
+	}
+
+	.attachment-large {
+		margin-bottom : 30px !important;
+	}
+
+	.elementor-widget-heading{
+		margin-top : -30px;
+	}
+
+	.nf-form-content {
+		width : 66%!important;
+	}
+}
+
+
+@media screen and (max-width: 860px){
+	header{
+		display : block;
+		text-align: center;
+	}
+
+	header nav{
+		justify-content: center !important;
+	}
+
+	.elementor-button-wrapper{
+		max-width:  190px !important;
+		margin: auto !important;
+	}
+	.elementor-element.elementor-element-4f58c36 .eael-contact-form {
+		width: 66% !important;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+
+	.elementor-element-283379d, .elementor-element-3b235b3, .elementor-element-2ce6bbb, .elementor-element-2e69f10 {
+		margin-top: 20px;
+		margin-bottom: 70px;
+	}
+
+	.elementor-widget-container{
+		padding: 0 !important;
+		border : 0 !important;
+	}
+	.selecteur-quantite {
+		padding-left : 25px;
+
+	}
+	.elementor-section .elementor-top-section .elementor-element .elementor-element-7f1bbd8 .elementor-section-boxed .elementor-section-height-default .elementor-section-height-default{
+		width : 66%!important;
+	}
+
+	.elementor-12 .elementor-element.elementor-element-bcbada8  .elementor-widget-container {
+		border-width: 0 !important;
+
+	}
+
+	.elementor-element-3420e2a{
+		margin-top: 50px;
+	}
+
+	.elementor-element-c8a3f53, .elementor-element-6048d59 {
+		padding-bottom: 50px;
+	}
+
+	.elementor-element-f701908 img{
+		margin-bottom: 0 !important;
+	}
+
+	.elementor-10 .elementor-element.elementor-element-4f58c36 .eael-contact-form {
+		width: 100% !important;
+	}
+
+	.elementor-element-652a3d1{
+		left: -100px !important;
+	}
+
+	.elementor-10 .elementor-element.elementor-element-e148579 .elementor-heading-title, .elementor-element-820a24e p {
+		font-size: 20px !important;
+	}
+	.elementor-button-wrapper{
+		width:  190px !important;
+		text-align: center !important;
+		margin-left: 0 !important;
+    	margin: auto !important;
+		margin-top: 10px !important;
+		margin-bottom: 40px !important;
+	}
+
+	.elementor-section .elementor-inner-section .elementor-element .elementor-element-cca5d3e .elementor-section-boxed .elementor-section-height-default .elementor-section-height-default{
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+}
+
+@media screen and (max-width: 510px){
+	header nav {
+		display : block;
+	}
+
+	#menu-principal{
+		display: block;
+	}
+	.elementor-element.elementor-element-4f58c36 .eael-contact-form {
+		width: 66% !important;
+	}
+	.elementor-button-wrapper{
+		max-width:  190px !important;
+	}
+	header nav a, header nav div {
+		width: 100% !important;
+		text-align: center;
+		display : block;
+	}
+
+	header nav a {
+		padding: 20px !important;
+		height: 60px;
+	}
+
+	.elementor-element-ce59535 h2{
+		font-size: 20px !important;
+	}
+
+	#gallery-1 .gallery-item, #gallery-2 .gallery-item {
+		width: 100% !important;
+		min-width : 150px !important;
+	}
+}
+
+	.elementor-button-wrapper {
+		margin: auto !important;
+		text-align: center !important;
+	}
+
+	#gallery-1 img, #gallery-2 img {
+		border-width: 0 !important;
+		padding: 2px;
+	}
+
+	.elementor-element-2cfb947, .elementor-element-de031aa{
+		width: auto !important;
+	}
+
+	#gallery-1 .gallery-item, #gallery-2 .gallery-item  {
+		float: none !important;
+	}
+
+	#gallery-1, #gallery-2   {
+		text-align: center;
+	}
+
+	.elementor-10 .elementor-element.elementor-element-4f58c36 {
+		position: relative;
+	}
+
+	.elementor-10 .elementor-element.elementor-element-652a3d1 {
+		position: absolute;
+		bottom: -40px;
+		left: -170px;
+	}
